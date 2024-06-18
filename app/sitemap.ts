@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   dataList.forEach((dataListItem) => {
     let routeUrl = dataListItem.name;
-    routeUrl = routeUrl === '' ? '' : `list/${routeUrl}`;
+    routeUrl = routeUrl === '' ? '' : `weblist/${routeUrl}`;
     sitemapRoutes.push({
       url: routeUrl,
       lastModified: new Date(),
