@@ -8,7 +8,7 @@ import BaseImage from '../image/BaseImage';
 export default function WebNavCard({ name, thumbnailUrl, title, url, content }: WebNavigationListRow) {
   return (
     <div className='flex flex-col gap-3 rounded-[12px] bg-[#e6e6fa] p-2 lg:p-5'>
-      <Link href={`/delicious/${name}`} title={title}>
+      <Link href={`/list/${name}`} title={title}>
         <BaseImage
           width={278}
           height={156}
